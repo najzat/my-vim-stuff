@@ -1,0 +1,25 @@
+# Catalyst debug
+snippet c_log
+	$c->log->debug("---------->>>>>>>> ${1:DebugTitle}");
+	$c->log->debug(Dumper ${2:DumpVariable});
+# Catalyst controller subroutine
+snippet c_stash
+	$c->stash->{${1:Name}} = ${2:value};
+snippet c_log_stash
+	$c->log->debug("---------->>>>>>>> catalyst->stash dump");
+	$c->log->debug(Dumper $c->stash);
+# Catalyst controller subroutine
+snippet c_sub
+	sub ${1:SubName} : Local {
+		my ( $self, $c) = @_;
+
+		${2:SubBody}
+
+		return;
+	}
+# Catalyst quick response
+snippet c_res
+	$c->response->body(${1:Response});
+
+
+

@@ -1,0 +1,35 @@
+# Catalyst helpers
+snippet c_uri
+	[% Catalyst.uri_for('/${1:path}') %]
+snippet c_l
+	[% l('${1:token}') %]
+
+# Catalyst authorization helpers
+snippet if_role
+	[% IF Catalyst.check_user_roles('${1:role}') %]
+		${2:do_something}
+	[% END%]
+snippet if_of
+	[% IF Catalyst.check_user_feature('${1:openfeature}') %]
+		${2:do_something}
+	[% END%]
+snippet if_role_of
+	[% IF Catalyst.check_user_roles('${1:role}') AND Catalyst.check_user_feature('${2:openfeature}') %]
+		${3:do_something}
+	[% END%]
+
+# template toolkit 
+snippet foreach
+	[% FOREACH ${1:item}  IN ${2:collection} %]
+		${3:do_something}
+	[% END %]
+snippet if
+	[% IF ${1:condition} %]
+		${2:do_something}
+	[% END %]
+snippet if_else
+	[% IF ${1:condition} %]
+		${2:do_something}
+	[% ELSE %]
+		${3:do_something_else}
+	[% END %]
