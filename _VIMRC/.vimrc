@@ -63,12 +63,7 @@ nmap <C-N> :tabprevious<CR>
 nmap <C-M> :tabnext<CR>
 
 
-" tab navigation like firefox
-:nmap <C-S-tab> :tabprevious<CR>
-:nmap <C-tab> :tabnext<CR>
-:map <C-S-tab> :tabprevious<CR>
 :map <C-tab> :tabnext<CR>
-:imap <C-S-tab> <Esc>:tabprevious<CR>i
 :imap <C-tab> <Esc>:tabnext<CR>i
 :nmap <C-t> :tabnew<CR>
 :imap <C-t> <Esc>:tabnew<CR>
@@ -80,3 +75,7 @@ au BufNewFile,BufRead *.tt2 setf html
 "zencoding trix
 let g:user_zen_expandabbr_key = '<c-e>'
 let g:use_zen_complete_tag = 1
+
+map <leader>f :FufFile **/<CR>
+map <leader>b :FufBuffer <CR>
+
