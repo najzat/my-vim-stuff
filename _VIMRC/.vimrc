@@ -99,7 +99,8 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
-
+":Rgrep command to search for the keyword under the cursor
+nnoremap <silent> <F3> :Rgrep<CR>
 
 "NERD Tree plugin toggling with F2
 map <F2> :NERDTreeToggle<CR>
