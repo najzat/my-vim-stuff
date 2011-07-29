@@ -8,6 +8,9 @@ snippet c_stash
 snippet c_log_stash
 	$c->log->debug("---------->>>>>>>> catalyst->stash dump");
 	$c->log->debug(Dumper $c->stash);
+snippet c_log_p
+	$c->log->debug("---------->>>>>>>> catalyst->req->params dump");
+	$c->log->debug(Dumper $c->req->params);
 # Catalyst controller subroutine
 snippet c_sub
 	sub ${1:SubName} : Local {

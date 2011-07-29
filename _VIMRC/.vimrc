@@ -145,4 +145,3 @@ let g:fuf_file_exclude = '\v\.DS_Store|^\.git/$|\.swp|\.svn'
 " grep extras
 let Grep_Skip_Dirs = '.svn'
 let Grep_Skip_Files = '*~ *.swp tags'
-
