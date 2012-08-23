@@ -65,12 +65,12 @@ filetype plugin on
 
 "use spaces instead of tabs with 2 spaces per tab
 set expandtab
-set tabstop=2
+set tabstop=4
 
 "disabled autoindent to use smartindent with 2 spaces for >> indent
 set noautoindent
 set smartindent
-set shiftwidth=2
+set shiftwidth=4
 
 
 
@@ -79,8 +79,11 @@ set shiftwidth=2
 
 "best colorscheme i found
 set t_Co=256
-colorscheme dante
-"colorscheme peachpuff
+"colorscheme dante
+set background=light
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+colorscheme solarized
 
 "backups in home/.backup
 set backup
@@ -145,3 +148,6 @@ let g:fuf_file_exclude = '\v\.DS_Store|^\.git/$|\.swp|\.svn'
 " grep extras
 let Grep_Skip_Dirs = '.svn'
 let Grep_Skip_Files = '*~ *.swp tags'
+
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
