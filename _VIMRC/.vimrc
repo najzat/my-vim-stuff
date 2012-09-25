@@ -151,3 +151,8 @@ let Grep_Skip_Files = '*~ *.swp tags'
 
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
+" Don't screw up folds when inserting text that might affect them, until
+" leaving insert mode. Foldmethod is local to the window.
+autocmd InsertEnter * let w:last_fdm=&foldmethod | setlocal foldmethod=manual
+autocmd InsertLeave * let &l:foldmethod=w:last_fdm
+
