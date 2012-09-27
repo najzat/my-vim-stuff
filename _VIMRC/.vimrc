@@ -18,6 +18,7 @@ set wildmenu
 " Show partial commands in the last line of the screen
 set showcmd
 
+set enc=utf-8
 
 "=====================================================================
 " Window {{{1
@@ -72,17 +73,10 @@ set noautoindent
 set smartindent
 set shiftwidth=4
 
-
-
-
-
-
-"best colorscheme i found
 set t_Co=256
 "colorscheme dante
 set background=light
 let g:solarized_termcolors=256
-let g:solarized_contrast="high"
 colorscheme solarized
 
 "backups in home/.backup
