@@ -23,6 +23,8 @@ snippet c_sub
 # Catalyst quick response
 snippet c_res
 	$c->response->body(${1:Response});
-
-
-
+snippet showme
+	use OWA::Test::Utils;
+	OWA::Test::Utils->show_me_the_page($mech->res->decoded_content);
+snippet c_model
+	$c->model('${1:Model}')->${2:method}

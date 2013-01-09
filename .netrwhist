@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/ps5039/workspace/trackerBcareful/jstracker/tests/features-watir'
-let g:netrw_dirhist_2='/home/ps5039/workspace/svn/owapro_mine/trunk/lib/Htmlize'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/ps539/workspace/owapro/root/src/customer_trackgroups'
+let g:netrw_dirhist_2='/home/ps539/workspace/owapro/root'
+let g:netrw_dirhist_3='/home/ps539/workspace/owapro'
+let g:netrw_dirhist_4='/home/ps539/workspace/owapro/root/js'
+let g:netrw_dirhist_5='/home/ps539/workspace/owapro/root/src/customer_trackgroups/tracktypes'
