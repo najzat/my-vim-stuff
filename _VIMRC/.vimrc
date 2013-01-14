@@ -73,15 +73,23 @@ set noautoindent
 set smartindent
 set shiftwidth=4
 
+
+
+
+
+
+"best colorscheme i found
 set t_Co=256
 "colorscheme dante
 set background=light
 let g:solarized_termcolors=256
+let g:solarized_contrast="high"
 colorscheme solarized
 
 "backups in home/.backup
 set backup
 set backupdir=$HOME/.backup
+set directory=$HOME/.backup,/tmp
 
 
 
@@ -126,7 +134,7 @@ nmap <C-M> :tabnext<CR>
 
 "au BufNewFile,BufRead *.tt2 set filetype=xml
 "au BufNewFile,BufRead *.tt2 setf tt2html
-au BufNewFile,BufRead *.tt2 setf html
+au BufNewFile,BufRead *.tt2 setf tt2html
 
 " PLUGIN zencoding 
 let g:user_zen_expandabbr_key = '<c-e>'
